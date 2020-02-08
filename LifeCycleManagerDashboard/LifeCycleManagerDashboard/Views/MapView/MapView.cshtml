@@ -1,0 +1,34 @@
+﻿@model MapViewModel
+@{
+    ViewData["Title"] = "Map overview";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Azure service modules for Azure maps -->
+<script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script>
+<link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css"/>
+<script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+@{
+    <!-- Serializes the list of LifeCycleManagers so it can be used in javascript. -->
+    var devices = Html.Raw(Json.Serialize(Model.LifeCycleManagers));
+    var statuses = Html.Raw(Json.Serialize(Model.Statuses));
+}
+<script src="~/bundle.js"></script>
+<div id="lcmMap">
+    <script type="text/javascript">
+        
+        //Loads the map information, passes the div id and the list of lcm's
+        LCMMapView.LoadMap('lcmMap', @devices, @statuses);
+    </script>
+    @if (Model.SelectedDevice != null)
+    {
+        <script type="text/javascript">
+        LCMMapView.SetFocusOnDevice(@Html.Raw(Json.Serialize(Model.SelectedDevice))); 
+        </script>
+    }
+</div>
+
+<!-- Partial view of the status box -->
+@await Html.PartialAsync("Partials/StatusBox")
+
+<!-- Partial view of the filter box -->
+@await Html.PartialAsync("Partials/FilterBox", Model)

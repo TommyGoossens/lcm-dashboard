@@ -1,0 +1,16 @@
+@using Microsoft.Identity.Web
+<ul class="nav navbar-nav navbar-right">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <li class="nav-link">@User.GetDisplayName()</li>
+        <li class="nav-item">
+            <a asp-area="AzureAD" asp-controller="Account" asp-action="SignOut" class="nav-link">Sign out</a>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a asp-area="AzureAD" asp-controller="Account" asp-action="SignIn" class="nav-link">Sign in</a>
+        </li>
+    }
+</ul>

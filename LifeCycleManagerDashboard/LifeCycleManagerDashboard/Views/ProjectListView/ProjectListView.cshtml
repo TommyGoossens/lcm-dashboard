@@ -1,0 +1,43 @@
+﻿<link rel="stylesheet" href="~/css/ProjectListView.css" />
+<script src="~/bundle.js"></script>
+@using LifeCycleManagerDashboard.Properties
+@model List<Project>
+@{
+    ViewData["Title"] = "Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row h-100">
+    <!-- PROJECT LIST -->
+    <div class="col-3">
+        <!-- Project search bar -->
+        <div class="row filter-bar no-gutters">
+            <div class="col-9">
+                <input type="text" class="search-box" id="search-box-projects" placeholder="Filter projects" />
+            </div>
+            <div class="col-2 offset-1">
+                <button class="btn btn-primary btn-heijmans-blue w-100" id="filter-projects-btn" onclick='ProjectList.FilterProjects()' type="submit">
+                    Filter
+                </button>
+            </div>
+        </div>
+
+        <!-- List of projects -->
+        <div class="row ml-1 project-list">
+            <div class=" col-12 list-group" id="project-list-items" role="tablist">
+                <!-- The HTML gets displayed by javascript -->
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9">
+        @await Html.PartialAsync("Partials/ProjectDetails")
+    </div>
+</div>
+
+<script>
+    /* Add click event listeners to the devices <a> tags and sets the default selected project to the first element */
+    ProjectList.SetProperties("@ApplicationURLS.Backend", @Html.Raw(Json.Serialize(Model)), @Html.Raw(Json.Serialize(@ViewData["AccessToken"])));
+    ProjectList.PopulateProjectList(@Html.Raw(Json.Serialize(Model)));
+    ProjectList.AddSearchBoxKeyListener();
+</script>

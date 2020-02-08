@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="~/css/DevicesListView.css"/>
+
+@model DevicesListViewModel
+@{
+    ViewData["Title"] = "Devices";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@await Html.PartialAsync("Partials/DevicesFilter")
+
+<div class="devices-table">
+    <table class="table table-striped table-fixed">
+        <thead>
+        <tr class="d-flex">
+            <th class="col-1">Connection</th>
+            <th class="col-1">Last log level</th>
+            <th class="col-3">Device name</th>
+            <th class="col-2">Project</th>
+            <th class="col-2">Location</th>
+            <th class="col-1">Last activity</th>
+            <th class="col-1">Firmware</th>
+            <th class="col-1">Map / info</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var lcm in Model.Devices)
+        {
+            <tr class="d-flex">
+                <td class="col-1 text-center">
+                    <span class="device-status-circle text-center" style="background-color:@getColor(lcm.ConnectionState)"></span>
+                </td>
+                <td class="col-1">@lcm.ApplicationState</td>
+                <td class="col-3">@lcm.DeviceId</td>
+                <td class="col-2">@lcm.Project</td>
+                <td class="col-2">@lcm.Location</td>
+                <td class="col-1">@lcm.LastActivityTime</td>
+                <td class="col-1">@lcm.Firmware</td>
+                <td class="col-1">
+                    <a class="pr-4" asp-controller="MapView" asp-action="Device" asp-route-deviceId="@lcm.DeviceId">
+                        <img src="~/images/map_icon.png" alt="map" height="30"/>
+                    </a>
+                    <a asp-controller="DeviceDetailView" asp-action="Device" asp-route-deviceId="@lcm.DeviceId">
+                        <img src="~/images/info_icon.png" alt="info" height="30" class="mr-3"/>
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<div class="pagination float-left">
+    <div class="btn-group dropup">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Items per page
+        </button>
+        <div class="dropdown-menu">
+            @for (int i = 25; i <= 100; i += 25)
+            {
+                <a class="nav-link" asp-area="" asp-controller="DevicesListView" asp-action="Index" asp-route-page="@ViewBag.PageNumber" asp-route-items="@i" asp-route-Name="@Model.Filter.Name" asp-route-Project="@Model.Filter.Project" asp-route-Status="@Model.Filter.Status">@i</a>
+            }
+        </div>
+    </div>
+</div>
+<div class="pagination float-right">
+    <a class="nav-link" asp-area="" asp-controller="DevicesListView" asp-action="Index" asp-route-page="@((ViewBag.PageNumber - 1) <= 0 ? 1 : ViewBag.PageNumber - 1)" asp-route-items="@ViewBag.ItemsPerPage" asp-route-name="@Model.Filter.Name" asp-route-project="@Model.Filter.Project" asp-route-status="@Model.Filter.Status">&laquo;</a>
+    @for (int i = 1; i < Model.NumberOfPages + 1; i++)
+    {
+        <a class="nav-link @(i == ViewBag.PageNumber ? "active" : "")" asp-area="" asp-controller="DevicesListView" asp-action="Index" asp-route-page="@i" asp-route-items="@ViewBag.ItemsPerPage" asp-route-name="@Model.Filter.Name" asp-route-project="@Model.Filter.Project" asp-route-status="@Model.Filter.Status">@i</a>
+    }
+    <a class="nav-link" asp-area="" asp-controller="DevicesListView" asp-action="Index" asp-route-page="@((ViewBag.PageNumber + 1) >= Model.NumberOfPages ? Model.NumberOfPages : ViewBag.PageNumber + 1)" asp-route-items="@ViewBag.ItemsPerPage" asp-route-name="@Model.Filter.Name" asp-route-project="@Model.Filter.Project" asp-route-Status="@Model.Filter.Status">&raquo;</a>
+</div>
+
+@{
+
+    string getColor(string state)
+    {
+        switch (state)
+        {
+            case "Disconnected":
+                return "red";
+            case "Connected":
+                return "green";
+            default:
+                return "blue";
+        }
+    }
+
+}

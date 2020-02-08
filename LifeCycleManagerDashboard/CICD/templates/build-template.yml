@@ -1,0 +1,81 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+parameters:
+  buildConfiguration: ''
+  deploymentApp: ''
+
+steps:
+   
+- task: UseDotNet@2
+  displayName: 'Install .net core 3.0'
+  inputs:
+    packageType: 'sdk'
+    version: '3.0.100'
+    includePreviewVersions: true
+
+- task: DotNetCoreCLI@2
+  displayName: 'Restore the NuGet packages'
+  inputs:
+    command: 'restore'
+    projects: '**/LifeCycleManagerDashboard.sln'
+    
+- task: CmdLine@2
+  displayName: 'Install node packages and run the tests'
+  inputs:
+    script: |
+      call npm install
+      call npm install -g browserify
+      call browserify wwwroot/js/device-configuration.js wwwroot/js/device-configuration-ui.js wwwroot/js/device-detail-map.js wwwroot/js/device-details.js wwwroot/js/mapfilters.js wwwroot/js/mapview.js wwwroot/js/projectlist.js wwwroot/js/utilities.js -o wwwroot/bundle.js
+      call npm test   
+    workingDirectory: LifeCycleManagerDashboard/LifeCycleManagerDashboard
+
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/LifeCycleManagerDashboard.sln'
+    arguments: '--configuration ${{ parameters.buildConfiguration }}'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Test dotnet'
+  inputs:
+    command: test
+    workingDirectory: 'LifeCycleManagerDashboard/Test_LifeCycleManagerDashboard/'
+    arguments: '--configuration ${{parameters.BuildConfiguration}} /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[Microsoft.Identity.Web]*%2c[LifeCycleManagerDashboard.Views]*%2c[*]*Startup%2c[*]*Program"'
+
+- script: |
+    dotnet tool install -g dotnet-reportgenerator-globaltool
+    reportgenerator -reports:**/coverage.cobertura.xml;**/coverage/cobertura-coverage.xml -targetDir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines;Cobertura
+  displayName: 'Create Code Coverage Report'
+
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  displayName: 'Publish JS test results'
+  inputs: 
+    testRunner: JUnit
+    testResultsFiles: '**/test-report.xml'
+    mergeTestResults: true
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage'
+  inputs: 
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
+    reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Publish the zip file'
+  inputs:
+    command: publish
+    publishWebProjects: True
+    arguments: '--configuration ${{ parameters.buildConfiguration }} --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
+    
+- task: AzureRmWebAppDeployment@4
+  displayName: 'Azure App Service Deploy: ${{parameters.deploymentApp}}'
+  inputs:
+    azureSubscription: 'HI-ARM-SE'
+    WebAppName: '${{parameters.deploymentApp}}'
+    package: '$(build.artifactstagingdirectory)\*.zip'

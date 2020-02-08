@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/wwwroot/test/device-details.test.js" errors="0" package="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/wwwroot/test/device-details.test.js" hostname="localhost" tests="14" failures="0" time="1.274" timestamp="2020-01-22T11:14:19">
+    <properties>
+    </properties>
+    <testcase classname="while setting up" name="sets up the commands" time="0">
+    </testcase>
+    <testcase classname="while setting up" name="creates a dropdown with logging levels" time="0">
+    </testcase>
+    <testcase classname="while setting up" name="clears the log messages pane" time="0">
+    </testcase>
+    <testcase classname="sending commands" name="is possible to successfully send a command" time="0">
+    </testcase>
+    <testcase classname="sending commands" name="is possible to successfully handle a time-out" time="0">
+    </testcase>
+    <testcase classname="sending commands" name="is possible to send unavailable command" time="0">
+    </testcase>
+    <testcase classname="sending commands" name="is possible to send a command to an offline device" time="0">
+    </testcase>
+    <testcase classname="creating UI items" name="will create a log message list item" time="0">
+    </testcase>
+    <testcase classname="creating UI items" name="will create a placeholder when no logs are available" time="0">
+    </testcase>
+    <testcase classname="regarding logging levels" name="will select everything when All is selected" time="0">
+    </testcase>
+    <testcase classname="regarding logging levels" name="will check All when all checkboxes are checked" time="0">
+    </testcase>
+    <testcase classname="regarding logging levels" name="changes the text of the button when clicking a level" time="0">
+    </testcase>
+    <testcase classname="regarding the log items" name="changes the active element when clicking a log item" time="0">
+    </testcase>
+    <testcase classname="regarding the log items" name="displays a log item after clicking the logging message" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>

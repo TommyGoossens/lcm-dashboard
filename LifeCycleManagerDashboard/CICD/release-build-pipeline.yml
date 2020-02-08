@@ -1,0 +1,10 @@
+trigger: master
+
+pool:
+  vmImage: 'windows-2019'
+  
+steps:
+- template: templates/build-template.yml
+  parameters:
+    buildConfiguration: 'Release'
+    deploymentApp: 'HI-lcmdashboard'

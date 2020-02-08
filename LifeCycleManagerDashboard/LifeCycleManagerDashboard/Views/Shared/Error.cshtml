@@ -1,0 +1,24 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    Console.WriteLine(ViewData["Exception"]);
+}
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">@ViewData["Exception"].</h2>
+
+@if (Model != null)
+{
+@if (Model.ShowRequestId)
+{
+<p>
+    <strong>Request ID:</strong> <code>@Model.RequestId</code>
+</p>
+}
+}
+<p>
+    @ViewData["Body"]
+</p>
+<p>
+    If the problems persist, please call the support.
+</p>

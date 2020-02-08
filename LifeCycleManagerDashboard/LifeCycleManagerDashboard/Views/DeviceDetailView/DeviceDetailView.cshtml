@@ -1,0 +1,62 @@
+﻿<link rel="stylesheet" href="~/css/DeviceDetailView.css"/>
+<script src="~/bundle.js"></script>
+<!-- Azure servicesmodules for Azure maps -->
+<script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script>
+<link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css"/>
+<script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+@using LifeCycleManagerDashboard.Properties
+@model DeviceDetailViewDataModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    <!-- Serializes the list of LifeCycleManagers so it can be used in javascript. -->
+    var device = Html.Raw(Json.Serialize(Model.Device));
+}
+<script type="text/javascript">
+    DeviceDetails.SetupBackendInformation(
+    @Html.Raw(Json.Serialize($"{ApplicationURLS.Backend}")), 
+    @Html.Raw(Json.Serialize(@ViewData["AccessToken"])),
+    @Html.Raw(Json.Serialize(Model.Device.DeviceId)),
+    @Html.Raw(Json.Serialize(ApplicationStateLevels.GetApplicationStateLevels())));
+</script>
+
+<div id="detailed-view" class="p-3">
+    <div class="row h-50 border-bottom">
+        <div class="col-6 h-100">
+            <div class="row h-100 pb-3">
+                <div class="col-7">
+                    <div id="device-details-map" class="h-100">
+                        <script type="text/javascript">
+                            //Loads the map information, passes the div id and the list of lcm's
+                            DeviceDetailMap.LoadMap('device-details-map', @device, @Html.Raw(Json.Serialize(Constants.DeviceStatuses)));
+
+                            //Removes the tomtom watermark
+                            document.getElementsByClassName("non-fixed")[0].remove()
+                        </script>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <ul class="list-unstyled">
+                        <li>Device: @Model.Device.DeviceId</li>
+                        <li>Project: @Model.Device.Project</li>
+                        <li>Location: @Model.Device.Location</li>
+                        <li>Application: @Model.ApplicationName</li>
+                        <li>
+                            <a class="btn btn-sm btn-heijmans-blue" asp-area="" asp-controller="DeviceConfigView" asp-action="Index"  asp-route-deviceId="@Model.Device.DeviceId">Configure this device</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 h-100 border-left">
+            @await Html.PartialAsync("Partials/DeviceDetailStatistics")
+        </div>
+    </div>
+    <div class="row h-50 mt-3 mb-3">
+        @await Html.PartialAsync("Partials/DeviceDetailLogMessages")
+    </div>
+</div>

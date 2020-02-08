@@ -1,0 +1,1668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.6022" branch-rate="0.6285000000000001" version="1.9" timestamp="1573828194" lines-covered="215" lines-valid="357" branches-covered="66" branches-valid="105">
+  <sources>
+    <source></source>
+  </sources>
+  <packages>
+    <package name="LifeCycleManagerDashboard" line-rate="0.6022" branch-rate="0.6285000000000001" complexity="187">
+      <classes>
+        <class name="LifeCycleManagerDashboard.Services.RestService" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Services/RestService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(System.Net.Http.HttpClient)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="19" hits="7" branch="False" />
+                <line number="20" hits="7" branch="False" />
+                <line number="21" hits="7" branch="False" />
+                <line number="22" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="7" branch="False" />
+            <line number="20" hits="7" branch="False" />
+            <line number="21" hits="7" branch="False" />
+            <line number="22" hits="7" branch="False" />
+            <line number="17" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Services.RestService/&lt;GetRequest&gt;d__3" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Services/RestService.cs" line-rate="0.9333" branch-rate="1" complexity="8">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.9333" branch-rate="1">
+              <lines>
+                <line number="30" hits="7" branch="False" />
+                <line number="31" hits="7" branch="True" condition-coverage="100% (3/3)">
+                  <conditions>
+                    <condition number="50" type="jump" coverage="100%" />
+                    <condition number="56" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="7" branch="False" />
+                <line number="34" hits="7" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="113" type="jump" coverage="100%" />
+                    <condition number="217" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="35" hits="7" branch="False" />
+                <line number="36" hits="7" branch="False" />
+                <line number="37" hits="5" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="266" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="2" branch="False" />
+                <line number="42" hits="2" branch="False" />
+                <line number="43" hits="2" branch="False" />
+                <line number="44" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="447" type="jump" coverage="100%" />
+                    <condition number="470" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="45" hits="2" branch="False" />
+                <line number="47" hits="2" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="52" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="30" hits="7" branch="False" />
+            <line number="31" hits="7" branch="True" condition-coverage="100% (3/3)">
+              <conditions>
+                <condition number="50" type="jump" coverage="100%" />
+                <condition number="56" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="33" hits="7" branch="False" />
+            <line number="34" hits="7" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="113" type="jump" coverage="100%" />
+                <condition number="217" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="35" hits="7" branch="False" />
+            <line number="36" hits="7" branch="False" />
+            <line number="37" hits="5" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="266" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="41" hits="2" branch="False" />
+            <line number="42" hits="2" branch="False" />
+            <line number="43" hits="2" branch="False" />
+            <line number="44" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="447" type="jump" coverage="100%" />
+                <condition number="470" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="45" hits="2" branch="False" />
+            <line number="47" hits="2" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="52" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Services.RestService/&lt;PostRequest&gt;d__4" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Services/RestService.cs" line-rate="0.9444" branch-rate="1" complexity="10">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.9444" branch-rate="1">
+              <lines>
+                <line number="55" hits="2" branch="False" />
+                <line number="56" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="51" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="58" hits="2" branch="False" />
+                <line number="59" hits="2" branch="False" />
+                <line number="60" hits="2" branch="True" condition-coverage="100% (3/3)">
+                  <conditions>
+                    <condition number="99" type="jump" coverage="100%" />
+                    <condition number="105" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="61" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="167" type="jump" coverage="100%" />
+                    <condition number="271" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="62" hits="2" branch="False" />
+                <line number="63" hits="2" branch="False" />
+                <line number="64" hits="2" branch="False" />
+                <line number="65" hits="1" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="320" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="68" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="526" type="jump" coverage="100%" />
+                    <condition number="549" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="72" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="76" hits="0" branch="False" />
+                <line number="78" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="55" hits="2" branch="False" />
+            <line number="56" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="51" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="58" hits="2" branch="False" />
+            <line number="59" hits="2" branch="False" />
+            <line number="60" hits="2" branch="True" condition-coverage="100% (3/3)">
+              <conditions>
+                <condition number="99" type="jump" coverage="100%" />
+                <condition number="105" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="61" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="167" type="jump" coverage="100%" />
+                <condition number="271" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="62" hits="2" branch="False" />
+            <line number="63" hits="2" branch="False" />
+            <line number="64" hits="2" branch="False" />
+            <line number="65" hits="1" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="320" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="68" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="526" type="jump" coverage="100%" />
+                <condition number="549" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="72" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="78" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Properties.ApplicationURLS" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Properties/ApplicationURLs.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Backend" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="5" hits="39" branch="False" />
+              </lines>
+            </method>
+            <method name="get_WebApp" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="6" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="SetURLS" signature="(System.String,System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="9" hits="7" branch="False" />
+                <line number="10" hits="7" branch="False" />
+                <line number="11" hits="7" branch="False" />
+                <line number="12" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="39" branch="False" />
+            <line number="6" hits="7" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="10" hits="7" branch="False" />
+            <line number="11" hits="7" branch="False" />
+            <line number="12" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Properties.Constants" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Properties/Constants.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".cctor" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.ErrorViewModel" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/ErrorViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_RequestId" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ShowRequestId" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.ApplicationStateLevels" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/LogMessages/ApplicationStateLevels.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="GetApplicationStateLevels" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.Project" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/Project.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_ProjectId" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Description" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ContactPerson" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.ContactPerson" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/Project.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Email" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PhoneNr" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String)" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.ViewModels.DeviceDetailViewDataModel" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/ViewModels/DeviceDetailViewDataModel.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Device" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="10" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Statistics" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="12" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Commands" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="14" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LogMessages" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="16" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerDetailView,LifeCycleManagerDashboard.Models.ViewModels.LifeCycleManagerStatistics,System.Collections.Generic.List`1&lt;System.String&gt;,System.Collections.Generic.List`1&lt;LifeCycleManagerDashboard.Models.LogMessages.LCMLoggingMessage&gt;)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="False" />
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="2" branch="False" />
+                <line number="26" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="7" branch="False" />
+            <line number="12" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+            <line number="16" hits="5" branch="False" />
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="2" branch="False" />
+            <line number="26" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.ViewModels.LifeCycleManagerStatistics" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/ViewModels/DeviceDetailViewDataModel.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_ApplicationName" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="31" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Uptime" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="32" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DiskUsage" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="33" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CpuUsage" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="34" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_RamUsage" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="35" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="31" hits="3" branch="False" />
+            <line number="32" hits="3" branch="False" />
+            <line number="33" hits="3" branch="False" />
+            <line number="34" hits="3" branch="False" />
+            <line number="35" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.ViewModels.DevicesListViewModel" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/ViewModels/DevicesListViewModel.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Devices" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="9" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_NumberOfPages" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Filter" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="13" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Collections.Generic.List`1&lt;LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerListView&gt;,System.Int64)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.ViewModels.MapViewModel" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/ViewModels/MapViewModel.cs" line-rate="0.7692" branch-rate="0.6944" complexity="46">
+          <methods>
+            <method name="get_StatusRunning" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="9" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_StatusWarning" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="12" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_StatusFatal" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="15" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_StatusError" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="18" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_StatusDisconnected" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="19" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SelectedDevice" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="21" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CountrySubdivisions" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Statuses" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="23" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Projects" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="24" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="GetLifeCycleManagers" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+                <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Collections.Generic.List`1&lt;LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerMapView&gt;)" line-rate="0.6666" branch-rate="0.6944">
+              <lines>
+                <line number="10" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="26" hits="2" branch="False" />
+                <line number="27" hits="2" branch="False" />
+                <line number="28" hits="18" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="414" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="6" branch="False" />
+                <line number="30" hits="6" branch="True" condition-coverage="67.64% (23/34)">
+                  <conditions>
+                    <condition number="95" type="jump" coverage="100%" />
+                    <condition number="115" type="jump" coverage="100%" />
+                    <condition number="124" type="jump" coverage="50%" />
+                    <condition number="135" type="jump" coverage="50%" />
+                    <condition number="163" type="jump" coverage="50%" />
+                    <condition number="172" type="jump" coverage="50%" />
+                    <condition number="197" type="jump" coverage="0%" />
+                    <condition number="149" type="jump" coverage="100%" />
+                    <condition number="208" type="jump" coverage="50%" />
+                    <condition number="183" type="jump" coverage="50%" />
+                    <condition number="226" type="jump" coverage="100%" />
+                    <condition number="244" type="jump" coverage="50%" />
+                    <condition number="262" type="jump" coverage="50%" />
+                    <condition number="280" type="jump" coverage="50%" />
+                    <condition number="295" type="jump" coverage="100%" />
+                    <condition number="310" type="jump" coverage="100%" />
+                    <condition number="325" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="2" branch="False" />
+                <line number="34" hits="2" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="51" hits="4" branch="False" />
+                <line number="52" hits="4" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="56" hits="6" branch="False" />
+                <line number="57" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="7" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="6" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
+            <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="10" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="27" hits="2" branch="False" />
+            <line number="28" hits="18" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="414" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="29" hits="6" branch="False" />
+            <line number="30" hits="6" branch="True" condition-coverage="67.64% (23/34)">
+              <conditions>
+                <condition number="95" type="jump" coverage="100%" />
+                <condition number="115" type="jump" coverage="100%" />
+                <condition number="124" type="jump" coverage="50%" />
+                <condition number="135" type="jump" coverage="50%" />
+                <condition number="163" type="jump" coverage="50%" />
+                <condition number="172" type="jump" coverage="50%" />
+                <condition number="197" type="jump" coverage="0%" />
+                <condition number="149" type="jump" coverage="100%" />
+                <condition number="208" type="jump" coverage="50%" />
+                <condition number="183" type="jump" coverage="50%" />
+                <condition number="226" type="jump" coverage="100%" />
+                <condition number="244" type="jump" coverage="50%" />
+                <condition number="262" type="jump" coverage="50%" />
+                <condition number="280" type="jump" coverage="50%" />
+                <condition number="295" type="jump" coverage="100%" />
+                <condition number="310" type="jump" coverage="100%" />
+                <condition number="325" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="33" hits="2" branch="False" />
+            <line number="34" hits="2" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="51" hits="4" branch="False" />
+            <line number="52" hits="4" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="56" hits="6" branch="False" />
+            <line number="57" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.LogMessages.LCMLoggingMessage" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/LogMessages/LCMLoggingMessage.cs" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name="get_LoggingLevel" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="23" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="set_LoggingLevel" signature="(System.String)" line-rate="0" branch-rate="0">
+              <lines>
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="10" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="27" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Message" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="30" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="10" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="27" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.LogMessages.LCMMessage" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/LogMessages/LCMMessage.cs" line-rate="0" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DeviceIdentifier" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ApplicationName" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateTime" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Type" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Content" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerBase" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/LifeCycleManager/LifeCycleManagerBase.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_ConnectionState" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="5" hits="48" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DeviceId" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="7" hits="48" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Project" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="9" hits="42" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ApplicationState" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="10" hits="42" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Location" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="11" hits="42" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="13" hits="27" branch="False" />
+                <line number="14" hits="27" branch="False" />
+                <line number="15" hits="27" branch="False" />
+                <line number="16" hits="27" branch="False" />
+                <line number="17" hits="27" branch="False" />
+                <line number="18" hits="27" branch="False" />
+                <line number="19" hits="27" branch="False" />
+                <line number="20" hits="27" branch="False" />
+                <line number="21" hits="27" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="48" branch="False" />
+            <line number="7" hits="48" branch="False" />
+            <line number="9" hits="42" branch="False" />
+            <line number="10" hits="42" branch="False" />
+            <line number="11" hits="42" branch="False" />
+            <line number="13" hits="27" branch="False" />
+            <line number="14" hits="27" branch="False" />
+            <line number="15" hits="27" branch="False" />
+            <line number="16" hits="27" branch="False" />
+            <line number="17" hits="27" branch="False" />
+            <line number="18" hits="27" branch="False" />
+            <line number="19" hits="27" branch="False" />
+            <line number="20" hits="27" branch="False" />
+            <line number="21" hits="27" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerDetailView" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/LifeCycleManager/LifeCycleManagerDetailView.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Longitude" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="8" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Latitude" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="10" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Double,System.Double,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="3" branch="False" />
+            <line number="10" hits="3" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerListView" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/LifeCycleManager/LifeCycleManagerListView.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_LastActivityTime" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="8" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Firmware" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="10" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="15" hits="12" branch="False" />
+                <line number="16" hits="12" branch="False" />
+                <line number="17" hits="12" branch="False" />
+                <line number="18" hits="12" branch="False" />
+                <line number="19" hits="12" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="18" branch="False" />
+            <line number="10" hits="18" branch="False" />
+            <line number="15" hits="12" branch="False" />
+            <line number="16" hits="12" branch="False" />
+            <line number="17" hits="12" branch="False" />
+            <line number="18" hits="12" branch="False" />
+            <line number="19" hits="12" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerMapView" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/LifeCycleManager/LifeCycleManagerMapView.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Longitude" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="7" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Latitude" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="9" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.Double,System.Double,System.String,System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="14" hits="15" branch="False" />
+                <line number="15" hits="15" branch="False" />
+                <line number="16" hits="15" branch="False" />
+                <line number="17" hits="15" branch="False" />
+                <line number="18" hits="15" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="24" branch="False" />
+            <line number="9" hits="24" branch="False" />
+            <line number="14" hits="15" branch="False" />
+            <line number="15" hits="15" branch="False" />
+            <line number="16" hits="15" branch="False" />
+            <line number="17" hits="15" branch="False" />
+            <line number="18" hits="15" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Models.Filters.DevicesFilter" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Models/Filters/DevicesFilter.cs" line-rate="0.8125" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Page" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="5" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Items" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="7" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="9" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Project" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="11" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="13" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Int32,System.String,System.String,System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="6" branch="False" />
+            <line number="7" hits="6" branch="False" />
+            <line number="9" hits="6" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="13" hits="8" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Filters.EntityNotFoundExceptionFilter" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Filters/EntityNotFoundExceptionFilter.cs" line-rate="0" branch-rate="0" complexity="11">
+          <methods>
+            <method name="OnException" signature="(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)" line-rate="0" branch-rate="0">
+              <lines>
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="True" condition-coverage="0% (0/4)">
+                  <conditions>
+                    <condition number="7" type="jump" coverage="0%" />
+                    <condition number="33" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="111" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="40" hits="0" branch="True" condition-coverage="0% (0/4)">
+                  <conditions>
+                    <condition number="238" type="jump" coverage="0%" />
+                    <condition number="250" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="True" condition-coverage="0% (0/4)">
+              <conditions>
+                <condition number="7" type="jump" coverage="0%" />
+                <condition number="33" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="111" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="40" hits="0" branch="True" condition-coverage="0% (0/4)">
+              <conditions>
+                <condition number="238" type="jump" coverage="0%" />
+                <condition number="250" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Filters.NoConnectionExceptionFilter" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Filters/NoConnectionExceptionFilter.cs" line-rate="0" branch-rate="0" complexity="9">
+          <methods>
+            <method name="OnException" signature="(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)" line-rate="0" branch-rate="0">
+              <lines>
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="True" condition-coverage="0% (0/4)">
+                  <conditions>
+                    <condition number="7" type="jump" coverage="0%" />
+                    <condition number="28" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="38" hits="0" branch="True" condition-coverage="0% (0/4)">
+                  <conditions>
+                    <condition number="136" type="jump" coverage="0%" />
+                    <condition number="148" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="True" condition-coverage="0% (0/4)">
+              <conditions>
+                <condition number="7" type="jump" coverage="0%" />
+                <condition number="28" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="38" hits="0" branch="True" condition-coverage="0% (0/4)">
+              <conditions>
+                <condition number="136" type="jump" coverage="0%" />
+                <condition number="148" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.DeviceDetailViewController" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/DeviceDetailViewController.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="Index" signature="(System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(LifeCycleManagerDashboard.Services.RestService)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="6" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.DeviceDetailViewController/&lt;GetDeviceDetails&gt;d__3" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/DeviceDetailViewController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="28" hits="2" branch="False" />
+                <line number="29" hits="2" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="65" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="30" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="28" hits="2" branch="False" />
+            <line number="29" hits="2" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="65" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="30" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.DevicesListViewController" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/DevicesListViewController.cs" line-rate="0.55" branch-rate="0.5714" complexity="16">
+          <methods>
+            <method name="Index" signature="(System.Int32,System.Int32,System.String,System.String,System.String)" line-rate="0.5384" branch-rate="0.75">
+              <lines>
+                <line number="29" hits="2" branch="False" />
+                <line number="30" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="10" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="26" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="39" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="39" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="40" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="133" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="2" branch="False" />
+                <line number="42" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Filter" signature="(LifeCycleManagerDashboard.Models.Filters.DevicesFilter)" line-rate="0" branch-rate="0">
+              <lines>
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="12" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="57" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="39" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="ParseJSONResponse" signature="(System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="87" hits="1" branch="False" />
+                <line number="88" hits="1" branch="False" />
+                <line number="89" hits="1" branch="False" />
+                <line number="90" hits="1" branch="False" />
+                <line number="91" hits="1" branch="False" />
+                <line number="92" hits="13" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="101" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="93" hits="5" branch="False" />
+                <line number="94" hits="5" branch="False" />
+                <line number="95" hits="5" branch="False" />
+                <line number="96" hits="1" branch="False" />
+                <line number="97" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(LifeCycleManagerDashboard.Services.RestService)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="False" />
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="29" hits="2" branch="False" />
+            <line number="30" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="10" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="26" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="39" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="39" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="40" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="133" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="41" hits="2" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="12" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="57" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="39" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="87" hits="1" branch="False" />
+            <line number="88" hits="1" branch="False" />
+            <line number="89" hits="1" branch="False" />
+            <line number="90" hits="1" branch="False" />
+            <line number="91" hits="1" branch="False" />
+            <line number="92" hits="13" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="101" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="93" hits="5" branch="False" />
+            <line number="94" hits="5" branch="False" />
+            <line number="95" hits="5" branch="False" />
+            <line number="96" hits="1" branch="False" />
+            <line number="97" hits="1" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="2" branch="False" />
+            <line number="20" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.DevicesListViewController/&lt;FilterDevices&gt;d__5" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/DevicesListViewController.cs" line-rate="0.7" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7" branch-rate="1">
+              <lines>
+                <line number="70" hits="2" branch="False" />
+                <line number="71" hits="2" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="38" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="72" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="75" hits="2" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="99" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="79" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="70" hits="2" branch="False" />
+            <line number="71" hits="2" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="38" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="72" hits="0" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="75" hits="2" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="99" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="79" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.MapViewController" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/MapViewController.cs" line-rate="0.8" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(LifeCycleManagerDashboard.Services.RestService)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="25" hits="3" branch="False" />
+                <line number="26" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="21" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="25" hits="3" branch="False" />
+            <line number="26" hits="3" branch="False" />
+            <line number="21" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.MapViewController/&lt;Index&gt;d__3" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/MapViewController.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="35" hits="2" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="36" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="50" type="jump" coverage="100%" />
+                    <condition number="186" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="37" hits="2" branch="False" />
+                <line number="38" hits="2" branch="False" />
+                <line number="39" hits="2" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="35" hits="2" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="14" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="36" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="50" type="jump" coverage="100%" />
+                <condition number="186" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="37" hits="2" branch="False" />
+            <line number="38" hits="2" branch="False" />
+            <line number="39" hits="2" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.MapViewController/&lt;&gt;c__DisplayClass4_0" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/MapViewController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;Device&gt;b__0" signature="(LifeCycleManagerDashboard.Models.LifeCycleManager.LifeCycleManagerBase)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="57" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="57" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.MapViewController/&lt;Device&gt;d__4" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/MapViewController.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="52" hits="1" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="53" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="78" type="jump" coverage="100%" />
+                    <condition number="214" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="52" hits="1" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="14" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="53" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="78" type="jump" coverage="100%" />
+                <condition number="214" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.MapViewController/&lt;&gt;c" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/MapViewController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;GetProjectNames&gt;b__5_0" signature="(LifeCycleManagerDashboard.Models.Project)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="69" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="69" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.MapViewController/&lt;GetProjectNames&gt;d__5" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/MapViewController.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="66" hits="2" branch="False" />
+                <line number="67" hits="2" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="49" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="68" hits="2" branch="False" />
+                <line number="70" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="66" hits="2" branch="False" />
+            <line number="67" hits="2" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="49" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="68" hits="2" branch="False" />
+            <line number="70" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.MapViewController/&lt;GetDevices&gt;d__6" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/MapViewController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="77" hits="3" branch="False" />
+                <line number="78" hits="3" branch="True" condition-coverage="100% (1/1)">
+                  <conditions>
+                    <condition number="49" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="79" hits="2" branch="False" />
+                <line number="80" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="77" hits="3" branch="False" />
+            <line number="78" hits="3" branch="True" condition-coverage="100% (1/1)">
+              <conditions>
+                <condition number="49" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="79" hits="2" branch="False" />
+            <line number="80" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.ProjectListViewController" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/ProjectListViewController.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Index" signature="()" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(LifeCycleManagerDashboard.Services.RestService)" line-rate="0" branch-rate="1">
+              <lines>
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="LifeCycleManagerDashboard.Controllers.ProjectListViewController/&lt;GetProjects&gt;d__3" filename="/Users/tommygoossens/OneDrive - Heijmans N.V/Projecten/HI-LifeCycleManagerDashboard/LifeCycleManagerDashboard/LifeCycleManagerDashboard/Controllers/ProjectListViewController.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0">
+              <lines>
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="49" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="49" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

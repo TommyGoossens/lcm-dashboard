@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>@ViewData["Title"] - LifeCycleManager</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body>
+
+<!-- Loading icon fading out on load -->
+<script>
+    $(window).on('load', function () {
+        $(".se-pre-con").fadeOut("slow");
+    });
+</script>
+
+<!-- Navigation header -->
+<nav class="navbar navbar-expand-sm  navbar-fixed-top justify-content-md-center justify-content-start" style="background-color:#feb900; height:60px">
+    <a asp-area="" asp-controller="MapView" asp-action="Index" class="navbar-brand">
+        <img height="50" src="~/images/logo.png" alt="Heijmans logo"/>
+    </a>
+
+    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="MapView" asp-action="Index">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="DevicesListView" asp-action="Index" asp-route-page="1" asp-route-items="25" asp-route-name="" asp-route-project="" asp-route-status="">Devices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="ProjectListView" asp-action="Index">Projects</a>
+                </li>
+            </ul>
+        }
+        <partial name="_LoginPartial"/>
+    </div>
+</nav>
+<!-- Body content -->
+<div class="container-fluid body-content">
+    <div class="se-pre-con">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    @RenderBody()
+
+    <footer id="footer">
+        <p>&copy; 2019 - Heijmans</p>
+    </footer>
+</div>
+
+
+<!-- Used for navigating to the DetailsView when clicking on the info button / icon -->
+@Html.Hidden("DirectToDetails", Url.Action("Device", "DeviceDetailView"))
+<!-- Used for navigating to the MapView when clicking on the map icon -->
+@Html.Hidden("DirectToMap", Url.Action("Device", "MapView"))
+@await Html.PartialAsync("_LoadingOverlay")
+@RenderSection("Scripts", required: false)
+</body>
+</html>

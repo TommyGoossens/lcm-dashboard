@@ -1,0 +1,42 @@
+{
+  "name": "hi-lifecyclemanager",
+  "version": "1.0.0",
+  "description": "Dashboard for the LCM",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "jest": "^24.9.0",
+    "jquery": "^3.4.1",
+    "litepicker": "^1.0.27",
+    "mock-xmlhttprequest": "^5.1.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "axios-mock-adapter": "^1.17.0",
+    "browserify": "^16.5.0",
+    "jest-junit-reporter": "^1.1.0"
+  },
+  "scripts": {
+    "test": "jest --ci --coverage"
+  },
+  "jest": {
+    "roots": [
+      "wwwroot/test/"
+    ],
+    "setupFiles": [
+      "./wwwroot/test/setup/setup-jest.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ],
+    "testResultsProcessor": "./node_modules/jest-junit-reporter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://heijmans.visualstudio.com/HI-SE/_git/HI-LifeCycleManager"
+  },
+  "author": "Tommy Goossens",
+  "license": "ISC"
+}

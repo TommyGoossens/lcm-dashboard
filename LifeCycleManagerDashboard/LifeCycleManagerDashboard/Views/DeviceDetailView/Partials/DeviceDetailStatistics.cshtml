@@ -1,0 +1,44 @@
+﻿@model DeviceDetailViewDataModel
+<link rel="stylesheet" href="~/css/DeviceDetailView.css"/>
+<script src="bundle.js"></script>
+<div class="row h-100">
+    <div class="col-6 h-100">
+        Last reported statistics
+        <table class="table table-sm table-striped table-fixed">
+            <thead>
+            <tr class="d-flex">
+                <th scope="col" class="col-6">Property</th>
+                <th scope="col" class="col-6">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">Uptime</th>
+                <td class="col-6">@Model.Statistics.Uptime</td>
+            </tr>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">CPU usage</th>
+                <td class="col-6">@Model.Statistics.CpuUsage</td>
+            </tr>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">RAM usage</th>
+                <td class="col-6">@Model.Statistics.RamUsage</td>
+            </tr>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">Disk usage</th>
+                <td class="col-6">@Model.Statistics.DiskUsage</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-6 h-100">
+        Available commands
+        <div class="list-group log-messages-list" id="supported-methods-list">
+            <script type="text/javascript">
+                DeviceDetails.SetupCommands(@Html.Raw(Json.Serialize(Model.Commands)));
+            </script>
+        </div>
+        <div id="command-callback-modal"></div>
+    </div>
+</div>

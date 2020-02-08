@@ -1,0 +1,34 @@
+﻿#detailed-view {
+    height: 100%;
+    width: 100%;
+}
+
+#device-details-map {
+    height: 100%;
+    width: 100%;
+}
+
+#device-details-map :focus {
+    outline: none
+}
+
+.log-messages-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;
+    padding: 5px 2px;
+}
+
+#log-messages-detail {
+    width: 100%;
+    height: 90%;
+    padding: 5px 10px;
+}
+
+.log-messages-detail-header {
+    height: 10%;
+}
+
+.log-messages-detail-body {
+    height: 90%;
+}

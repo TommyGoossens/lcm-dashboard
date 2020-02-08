@@ -1,0 +1,51 @@
+﻿@model DevicesListViewModel
+@{
+    Model.Filter.Page = ViewBag.PageNumber;
+    Model.Filter.Items = ViewBag.ItemsPerPage;
+}
+<div class="filter-bar">
+    @using (Html.BeginRouteForm("DevicesListView", new { page = ViewBag.PageNumber, items = ViewBag.ItemsPerPage, name = Model.Filter.Name, project = Model.Filter.Project, status = Model.Filter.Status }))
+    {
+        <div class="row align-items-center">
+            <div class="col-7">
+                @Html.TextBoxFor(Model => @Model.Filter.Name, htmlAttributes: new
+           {
+               @class = "search-box",
+               @placeholder = "Search for device names"
+           })
+            </div>
+            <div class="col-2 align-items-end">
+                <div class="dropdown">
+                    @Html.DropDownListFor(Model => Model.Filter.Project,
+                        new SelectList(
+                            new List<Object>
+                            {
+                                new { value = "", text = "All projects" },
+                                new {value ="HI-DataLab",text = "HI-DataLab" }
+                            },
+                            "value", "text"
+                         ),
+                         htmlAttributes: new
+                         {
+                            @class = "btn btn-primary btn-heijmans-blue  w-100"
+                         })
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="dropdown">
+                    @Html.DropDownListFor(Model => Model.Filter.Status,
+                        new SelectList(ApplicationStateLevels.GetApplicationStateLevels()),
+                        htmlAttributes: new
+                        {
+                             @class = "btn btn-primary btn-heijmans-blue  w-100"
+                        })
+                </div>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-primary btn-heijmans-blue w-100" type="submit" asp-area="" asp-controller="DevicesListView" asp-action="Filter">
+                    Search
+                </button>
+            </div>
+        </div>
+    }
+</div>

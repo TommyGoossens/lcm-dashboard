@@ -1,0 +1,78 @@
+﻿@model MapViewModel
+@{
+    <!-- Serializes the list of LifeCycleManagers so it can be used in javascript. -->
+    var statuses = Html.Raw(Json.Serialize(Model.Statuses));
+    var provinces = Html.Raw(Json.Serialize(Model.Provinces));
+    var projects = Html.Raw(Json.Serialize(Model.Projects));
+}
+
+<!-- Box containing the filters for the map -->
+<div id="mapFilters" class="card col-6 col-sm-5 col-md-3 col-lg-3 col-xl-2 cardOverlay">
+    <script type="text/javascript">
+        LCMMapView.PopulateProjectsAndProvinces(@projects,@provinces);
+    </script>
+    <div class="card-body">
+        <!--    Filter for statuses    -->
+        <div class="row">
+            <div class="col order-1">
+                <hr>
+            </div>
+            <div class="col order-5">Status</div>
+            <div class="col order-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-between" id="statusCheckboxes">
+            <script type="text/javascript">
+                LCMMapFilters.populateStatusBoxes(@statuses);
+            </script>
+        </div>
+
+        <!--    Filter for projects    -->
+        <div class="row">
+            <div class="col order-1">
+                <hr>
+            </div>
+            <div class="col order-5">Project</div>
+            <div class="col order-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="dropdown">
+                <button class="btn btn-heijmans-blue dropdown-toggle dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select project(s)
+                </button>
+                <ul class="dropdown-menu checkbox-menu allow-focus" id="project-dropdown">
+                    <script type="text/javascript">
+                        LCMMapFilters.displayProjects(@projects);
+                    </script>
+                </ul>
+            </div>
+        </div>
+
+        <!--    Filter for provinces    -->
+        <div class="row">
+            <div class="col order-1">
+                <hr>
+            </div>
+            <div class="col order-5">Provinces</div>
+            <div class="col order-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="dropdown">
+                <button class="btn btn-heijmans-blue dropdown-toggle dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select province:
+                </button>
+                <ul class="dropdown-menu checkbox-menu allow-focus" id="province-dropdown">
+                    <script type="text/javascript">
+                        LCMMapFilters.displayProvinces(@provinces);
+                    </script>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

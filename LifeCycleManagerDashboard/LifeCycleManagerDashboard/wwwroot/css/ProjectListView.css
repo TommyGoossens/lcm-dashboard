@@ -1,0 +1,4 @@
+﻿.project-list{
+    height: calc(100% - 70px);
+    overflow-y:auto;
+}

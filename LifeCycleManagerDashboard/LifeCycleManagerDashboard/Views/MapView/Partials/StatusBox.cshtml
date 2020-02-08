@@ -1,0 +1,52 @@
+﻿<!-- Box containing the filters for the map -->
+<div id="statusBox" class="card col-6 col-sm-5 col-md-3 col-lg-3 col-xl-2 cardOverlay">
+    <div class="card-body">
+        <!-- Disconnected + Fatal -->
+        <div class="row">
+            <div class="col-6">
+                <span class="device-status-circle-big text-center float-left" style="background-color:red" id="devices-disconnected"></span>
+            </div>
+            <div class="col-6">
+                <span class="device-status-circle-big text-center float-right" style="background-color:red" id="devices-fatal"></span>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-6">
+                <span class="float-left">Disconnected</span>
+            </div>
+            <div class="col-6">
+                <span class="float-right">Fatal</span>
+            </div>
+        </div>
+        <!-- Warning -->
+        <div class="row ">
+            <div class="col-6">
+                <span class="device-status-circle-big text-center float-left" style="background-color:#be0000" id="devices-error"></span>
+            </div>
+            <div class="col-6">
+                <span class="device-status-circle-big text-center float-right" style="background-color:#ffa310" id="devices-warning"></span>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-6">
+                <span class="float-left">Errors</span>
+            </div>
+            <div class="col-6">
+                <span class="float-right">Warnings</span>
+            </div>
+        </div>
+
+        <!-- Errors + Running -->
+        <div class="row">
+
+            <div class="col-6">
+                <span class="device-status-circle-big text-center" style="background-color:green" id="devices-running"></span>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col">
+                <span class="float-left">Running</span>
+            </div>
+        </div>
+    </div>
+</div>

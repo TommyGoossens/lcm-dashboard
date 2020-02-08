@@ -1,0 +1,117 @@
+<div class="row h-100">
+    <div class="col-6 h-100">
+        Last reported statistics
+        <table class="table table-sm table-striped table-fixed">
+            <thead>
+            <tr class="d-flex">
+                <th scope="col" class="col-6">Property</th>
+                <th scope="col" class="col-6">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">Uptime</th>
+                <td class="col-6">Model.Statistics.Uptime</td>
+            </tr>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">CPU usage</th>
+                <td class="col-6">Model.Statistics.CpuUsage</td>
+            </tr>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">RAM usage</th>
+                <td class="col-6">Model.Statistics.RamUsage</td>
+            </tr>
+            <tr class="d-flex">
+                <th scope="row" class="col-6">Disk usage</th>
+                <td class="col-6">Model.Statistics.DiskUsage</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-6 h-100">
+        Available commands
+        <div class="list-group log-messages-list" id="supported-methods-list">
+        </div>
+    </div>
+</div>
+<div id="command-callback-modal">
+</div>
+<div class="col-3 h-100">
+    <div class="row h-100">
+        <div class="col-6">
+            <div class="row">
+                <div class="text-center">
+                    <h5>Filters</h5>
+                </div>
+            </div>
+            <!-- Datepicker -->
+            <div class="row">
+                <button id="date-time-picker-logs" class="btn btn-outline-primary w-100" style="height: 60px">
+                    <p id="logs-date-selected">Pick a date </p>
+                </button>
+            </div>
+            <!-- Logging level selector -->
+            <div class="row pt-2">
+                <small>Select a logging level</small>
+                <button type="button" class="btn btn-secondary dropdown-toggle w-100" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" id="log-level-dropdown">
+                    All
+                </button>
+                <ul class="dropdown-menu checkbox-menu allow-focus" id="log-level-dropdown-items">
+                </ul>
+            </div>
+
+            <!-- Apply filter -->
+            <div class="row pt-3">
+                <button type="button" class="btn btn-heijmans-blue w-100" id="btn-apply-log-filters">Apply</button>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row log-messages-list h-100" id="log-messages-scroll-container">
+                <div class="list-group h-100" id="log-messages-list" role="tablist"><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">ERROR</h5></div>
+                    <small>2020-01-15T10:31:30</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">INFO</h5></div>
+                    <small>2020-01-15T10:31:28</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">INFO</h5></div>
+                    <small>2020-01-15T10:31:28</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">ERROR</h5></div>
+                    <small>2020-01-15T10:30:31</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">INFO</h5></div>
+                    <small>2020-01-15T10:30:30</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">INFO</h5></div>
+                    <small>2020-01-15T10:30:30</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">ERROR</h5></div>
+                    <small>2020-01-15T10:29:36</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">INFO</h5></div>
+                    <small>2020-01-15T10:29:32</small></a><a
+                        class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">INFO</h5></div>
+                    <small>2020-01-15T10:29:32</small></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col" id="log-messages-detail">
+    <!-- Content will be generated by the ShowLogMessage function -->
+</div>
+
+<div id="loading-spinner-overlay">
+    <div class=" loading-spinner text-warning">
+        <div class="spinner-border ml-2" role="status">
+            <span class="sr-only ml"></span>
+        </div>
+        <p class="text-center">
+            Loading
+        </p>
+    </div>
+</div>

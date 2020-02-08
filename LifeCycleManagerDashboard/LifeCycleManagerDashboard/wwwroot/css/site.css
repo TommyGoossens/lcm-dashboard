@@ -1,0 +1,227 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Wrapping element */
+.body-content {
+    position: absolute;
+    top: 60px;
+    margin: 0;
+    width: 100%;
+    height: calc(95vh - 60px);
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%; /*Footer height */
+}
+
+#lcmMap {
+    outline: none;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+}
+
+#lcmMap :focus {
+    outline: none
+}
+
+.cardOverlay {
+    margin-top: 25px;
+    margin-left: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #b0b0b0;
+}
+
+#mapFilters {
+    min-height: 25%;
+    max-height: 50%;
+    z-index: 10;
+}
+
+#devicesListBox {
+    z-index: 9;
+    max-height: 50%;
+    padding: 5px 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.devices-list-table {
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.device-status-circle-big {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    top: 50%;
+    background: center no-repeat #fff;
+    z-index: 9999;
+}
+
+.btn-heijmans-blue {
+    background-color: #003366 !important;
+    color: #FFF
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: grey;
+    padding-left: 5px;
+    /*  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #feb900;
+    border-radius: 10px;
+}
+
+.table-fixed {
+    height: 94%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.table-fixed tbody {
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100% - 51px);
+}
+
+.table-fixed thead, tbody, tr, td, th {
+    display: block;
+}
+
+.filter-bar {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.search-box {
+    background-image: url("../images/search_icon.png");
+    background-size: 20px;
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.search-box:focus {
+    box-shadow: 0 0 2pt 1pt #feb900;
+    outline: none;
+}
+
+.device-status-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.checkbox-menu li label {
+    display: block;
+    padding: 3px 10px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    margin: 0;
+    transition: background-color .4s ease;
+}
+
+.checkbox-menu li input {
+    margin: 0 5px;
+    top: 2px;
+    position: relative;
+}
+
+.checkbox-menu li.active label {
+    background-color: #cbcbff;
+    font-weight: bold;
+}
+
+.checkbox-menu li label:hover,
+.checkbox-menu li label:focus {
+    background-color: #f5f5f5;
+}
+
+.checkbox-menu li.active label:hover,
+.checkbox-menu li.active label:focus {
+    background-color: #b8b8ff;
+}
+
+.popup-header {
+    width: 90%;
+}
+
+
+#loading-spinner-overlay {
+    top: 60px;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: #4e555b;
+    opacity: 0.5;
+    display: none;
+}
+
+.loading-spinner {
+    position: fixed;
+    left: 48.5vw;
+    top: 48.5vh;
+    z-index: 101;
+}

@@ -1,0 +1,25 @@
+@model List<Dictionary<string, object>>
+@{
+    string displayName = ViewData["DisplayName"].ToString();
+    string propertyName = ViewData["PropertyName"].ToString();
+}
+@{
+    var keynames = new List<string>();
+    if (Model.Any())
+    {
+        keynames = Model.Last().Keys.ToList();
+    }
+}
+<div class="card mt-2 config-property-card">
+    <div class="card-header">
+        <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-@propertyName" id="collapse-button-@propertyName"/>
+        </h5>
+    </div>
+    <div id="collapse-@propertyName" class="collapse hide">
+        <ul class="card-body" id="card-body-@propertyName"/>
+    </div>
+    <div class="card-footer">
+        <button type="button" class="btn btn-sm btn-success float-right" onclick='DeviceConfiguration.CreateModal(@Html.Raw(Json.Serialize(@keynames)),"@propertyName")'>New</button>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+.config-property-card {
+    min-width: 55rem;
+    max-width: 55rem;
+}
+
+.property-card-container {
+    height: 93%;
+    padding-left: 45px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.property-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.property-json {
+    overflow: auto;
+    background-color: rgba(174, 178, 180, 0.32)
+}
+
+.object-property-card {
+    width: 95%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li * {
+    float: left;
+}
+
+li, h3 {
+    clear: both;
+    list-style: none;
+}
+
+/* Task list */
+li {
+    overflow: hidden;
+    padding: 5px 0;
+    border-bottom: 0;
+}
+
+.property-input {
+    width: 28%;
+    margin-right: 10px;
+}
+
+.value-input {
+    width: 65%;
+}

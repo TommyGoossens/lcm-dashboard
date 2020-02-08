@@ -1,0 +1,13 @@
+trigger: none
+pr:
+- development
+- master
+
+pool:
+  vmImage: 'windows-2019'
+  
+steps:
+- template: templates/build-template.yml
+  parameters:
+    buildConfiguration: 'Debug'
+    deploymentApp: 'dev-lcmdashboard'

@@ -1,0 +1,14 @@
+{
+  "Local": {
+    "BackendBaseUrl": "https://localhost:5000",
+    "WebAppBaseUrl": "https://localhost:5003"
+  },
+  "Debug": {
+    "BackendBaseUrl": "https://dev-lifecyclemanagerbackend.azurewebsites.net",
+    "WebAppBaseUrl": "https://dev-lcmdashboard.azurewebsites.net"
+  },
+  "Release": {
+    "BackendBaseUrl": "https://HI-lifecyclemanagerbackend.azurewebsites.net",
+    "WebAppBaseUrl": "https://HI-lcmdashboard.azurewebsites.net"
+  }
+}
