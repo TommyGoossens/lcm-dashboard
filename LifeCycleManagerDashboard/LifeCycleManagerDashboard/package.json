@@ -4,7 +4,7 @@
   "description": "Dashboard for the LCM",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "jest": "^24.9.0",
     "jquery": "^3.4.1",
     "litepicker": "^1.0.27",
